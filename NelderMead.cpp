@@ -60,7 +60,7 @@ std::pair<std::vector<double>, double> NelderMead::getResult(bool useTimeLimitCr
 			double sum = 0.0;
 			for (int j = 0; j < this->dimension; j++)
 				sum += (simplex[i].first[j] - simplex[0].first[j]) * (simplex[i].first[j] - simplex[0].first[j]);
-			sum = sqrt(sum);
+			sum = std::sqrt(sum);
 			if (sum > max)
 				max = sum;
 		}

@@ -5,6 +5,7 @@
 #include <functional>
 #include <algorithm>
 #include <chrono>
+#include <cmath>
 
 /**
  * \brief Метод оптимизации Нелдер-Мида
